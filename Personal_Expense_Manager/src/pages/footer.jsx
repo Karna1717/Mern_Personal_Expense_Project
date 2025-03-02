@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>About Us</h3>
           <p>
-            "CashFlow is your ultimate platform to efficiently manage your finances. Whether you're a business or an individual, CashFlow helps you track income, expenses, and optimize cash management. Stay on top of your financial health and make informed decisions with ease!"
+            "MoneySync is your ultimate platform to efficiently manage your finances. Whether you're a business or an individual, MoneySync helps you track income, expenses, and optimize cash management. Stay on top of your financial health and make informed decisions with ease!"
           </p>
         </div>
         <div className="footer-section">
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2025 CashFlow. All rights reserved.</p>
+        <p>&copy; 2025 MoneySync. All rights reserved.</p>
       </div>
     </footer>
   );

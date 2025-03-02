@@ -61,7 +61,7 @@ function Navbar() {
     <>
     <div id="navbar">
       <div className="logo">
-        <h4>CashFlow</h4>
+        <h4>MoneySync</h4>
       </div>
 
       {/* Hamburger Menu */}

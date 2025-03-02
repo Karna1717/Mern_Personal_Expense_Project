@@ -75,7 +75,7 @@ function MainPage() {
           </div>
          
           <div className="card">
-          <h1>CashFlow</h1>
+          <h1>MoneySync</h1>
           <p> "Managing your personal finances doesn’t have to be complicated. Our expense tracker is designed to help you track every dollar you spend, categorize your expenses. Start tracking today and take the first step toward smarter financial decisions!" </p>
           </div>
         </div>
