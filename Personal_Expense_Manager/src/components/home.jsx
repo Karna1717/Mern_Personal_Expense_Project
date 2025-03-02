@@ -125,14 +125,14 @@ function MainPage() {
           
           <h1>About Us</h1>
           <p>
-            Welcome to <strong>CashFlow</strong>, a personal finance manager designed to help you track and manage your expenses easily.
+            Welcome to <strong>MoneySync</strong>, a personal finance manager designed to help you track and manage your expenses easily.
           </p>
           <p>
             Our goal is to make personal finance management simpler, allowing you to stay on top of your spending and savings.
             You can add daily expenses, track your spending habits, and plan your budget effectively.
           </p>
           
-          <p>Thank you for choosing <strong>CashFlow</strong>. We hope it helps you take control of your financial future!</p>
+          <p>Thank you for choosing <strong>MoneySync</strong>. We hope it helps you take control of your financial future!</p>
         </div>
       </section>
 
