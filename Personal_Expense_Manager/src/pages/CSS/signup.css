@@ -1,22 +1,43 @@
+/* 🔥 Ultimate Premium Glassmorphism Signup Page - FULLY RESPONSIVE ✅ */
+
 .signup-container {
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 104vh;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #141414);
+    animation: glowBackground 5s infinite alternate;
 }
 
 .signup-form {
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 255, 0, 0.3);
     text-align: center;
     width: 100%;
     max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    animation: floatCard 5s infinite ease-in-out;
 }
 
+/* ✅ Sign Up Text Glow Effect */
+.signup-form h2 {
+    font-size: 32px;
+    color: #00ff00;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 
+        0 0 5px #00ff00, 
+        0 0 15px #00ff00;
+}
+
+/* ✅ Input Field Design */
 .form-group {
     text-align: left;
     margin-bottom: 15px;
@@ -26,59 +47,52 @@
     display: block;
     font-weight: 100;
     margin-bottom: 5px;
-    color: #400e0e;
+    color: #ffffff;
     font-family: 'Arial', sans-serif;
 }
 
 .signup-form input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
     font-size: 16px;
     box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s;
 }
 
+/* ✅ Input Field Glow On Focus */
+.signup-form input:focus {
+    outline: none;
+    border: 1px solid #00ff00;
+    background: rgba(0, 255, 0, 0.1);
+    box-shadow: 0 0 30px #00ff00;
+}
+
+/* ✅ Clean Simple Button Without Glow */
 .signup-form button {
     width: 100%;
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #00ff00;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all 0.3s;
+    box-shadow: none;
 }
 
+/* ✅ Button Hover Effect */
 .signup-form button:hover {
-    background-color: #4CAF49;
+    background-color: #00cc00;
+    transform: scale(1.05);
+    box-shadow: none;
 }
 
-.login-label {
-    display: flex;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-}
-
-.login-link {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-.login-link:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 480px) {
-    .signup-form {
-        width: 90%;
-        padding: 20px;
-    }
-}
-
+/* ✅ Already Have an Account Text */
 .signup-link {
     display: flex;
     justify-content: left;
@@ -87,15 +101,76 @@
 }
 
 .signup-link label {
-    color: #777;
+    color: #ccc;
 }
 
 .signup-link a {
-    color: #4CAF50;
+    color: #00ff00;
     text-decoration: none;
     font-weight: bold;
 }
 
 .signup-link a:hover {
     text-decoration: underline;
+}
+
+/* ✅ Background Glow Animation */
+@keyframes glowBackground {
+    0% {
+        background: linear-gradient(135deg, #000000, #141414);
+    }
+    100% {
+        background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+    }
+}
+
+/* ✅ Floating Card Effect */
+@keyframes floatCard {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ✅ FULL RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .signup-form {
+        max-width: 350px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup-form {
+        max-width: 300px;
+        padding: 20px;
+    }
+    .signup-form h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .signup-form {
+        max-width: 280px;
+        padding: 15px;
+    }
+    .signup-form h2 {
+        font-size: 22px;
+    }
+    input, button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-form {
+        width: 90%;
+        padding: 20px;
+    }
 }

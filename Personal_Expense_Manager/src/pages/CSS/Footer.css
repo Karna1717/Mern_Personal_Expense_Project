@@ -1,11 +1,30 @@
+/* ✅ Premium Glassmorphism Footer with Glow Effect ✅ */
+
 .footer {
-  background-color: #758174;
+  /* Glassmorphism effect with blur and transparent background */
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: white;
   width: 100%;
-  padding: 40px 0;
+  padding: 50px 0;
+  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.3);
+  animation: footer-glow 4s infinite alternate;
+}
+
+/* ✅ Footer Glow Animation */
+@keyframes footer-glow {
+  0% {
+    box-shadow: 0 -5px 30px rgba(0, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 -5px 50px rgba(0, 255, 255, 0.5);
+  }
 }
 
 .footer-container {
+  /* Flexbox for section alignment */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -15,6 +34,7 @@
 }
 
 .footer-section {
+  /* Flexible sections that will stack on smaller screens */
   flex: 1;
   min-width: 250px;
   margin: 20px;
@@ -22,60 +42,88 @@
 }
 
 .footer-section h3 {
+  /* Heading design with a border-bottom */
   margin-bottom: 15px;
-  font-size: 1.5em;
-  border-bottom: 2px solid #ffffff;
+  font-size: 1.8em;
+  color: #00ff9d;
+  border-bottom: 2px solid #00ff9d;
   padding-bottom: 5px;
 }
 
 .footer-section p {
+  /* Paragraph styling for contact info */
   line-height: 1.6;
-  text-align: left;
+  color: #cfcfcf;
 }
 
 .footer-section .contact-info {
+  /* Contact info flex layout */
   display: flex;
   align-items: center;
   margin-top: 10px;
 }
 
 .footer-section .contact-info img {
+  /* Icon size adjustment */
   height: 30px;
   margin-right: 10px;
 }
 
 .footer-section ul {
+  /* Remove default list styling */
   list-style: none;
   padding: 0;
 }
 
 .footer-section ul li {
+  /* Spacing between list items */
   margin: 10px 0;
 }
 
 .footer-section a {
-  color: #ffefef;
+  /* Link styling */
+  color: #00ff9d;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .footer-section a:hover {
-  color: #00bc2c;
-  text-decoration: underline;
+  /* Hover effect on links */
+  color: #ff00ff;
+  text-shadow: 0 0 15px #ff00ff;
+  transform: scale(1.05);
 }
 
 .footer-bottom {
+  /* Bottom section for copyright info */
   text-align: center;
   padding: 15px 0;
-  border-top: 1px solid #444;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.9em;
+  color: #cfcfcf;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .footer-bottom p {
   margin: 0;
 }
 
-@media (max-width: 768px) {
+.footer-bottom a {
+  /* Footer bottom link */
+  color: #00ff9d;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 15px #ff00ff;
+  transform: scale(1.1);
+}
+
+/* ✅ Fully Responsive Footer */
+@media (max-width: 900px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -87,5 +135,30 @@
 
   .footer-bottom {
     font-size: 0.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-section {
+    min-width: 200px;
+  }
+
+  .footer-bottom {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.7em;
   }
 }
