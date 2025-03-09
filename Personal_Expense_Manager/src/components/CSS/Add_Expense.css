@@ -1,46 +1,66 @@
-.expense-wrapper {
-    backdrop-filter: blur(2px);
+/* ✅ Perfectly Aligned Glassmorphism Design ✅ */
+
+.main_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    backdrop-filter: blur(20px);
+  }
+  
+  .expense-wrapper {
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 20px;
     box-sizing: border-box;
-}
-
-.expense-form-container {
+  }
+  
+  .expense-form-container {
     width: 100%;
-    max-width: 600px;
-    background: white;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-}
-
-.expense-form-container h2 {
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .expense-form-container h2 {
     text-align: center;
-}
-
-.expense-form {
+    color: #fff;
+  }
+  
+  .expense-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-.expense-form-container input,
-.expense-form-container select {
-    padding: 10px;
-    border: 1px solid #ccc;
+    gap: 15px;
+  }
+  
+  .expense-form-container input,
+  .expense-form-container select {
+    padding: 12px;
+    border: none;
     border-radius: 4px;
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
-}
-
-.expense-form-container button {
-    margin-top: 10px;
-    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  .expense-form-container input::placeholder {
+    color: #ccc;
+  }
+  
+  .expense-form-container button {
+    margin-top: 15px;
+    padding: 12px;
     background-color: #00cf07;
     color: white;
     border: none;
@@ -48,64 +68,90 @@
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.expense-form-container button:hover {
+  }
+  
+  .expense-form-container button:hover {
     background-color: #4CAF48;
-}
-
-.buttons {
+  }
+  
+  .buttons {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.buttons button {
+    gap: 15px;
+  }
+  
+  .buttons button {
     width: 48%;
-}
-
-.expense-list-container {
+  }
+  
+  .expense-list-container {
     flex: 1;
     max-width: 50%;
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-}
-
-.expense-list {
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .expense-list {
     list-style-type: none;
     padding: 0;
-}
-
-.expense-list li {
+  }
+  
+  .expense-list li {
     background: #f4f4f4;
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
-}
-
-#button2 {
+  }
+  
+  #button2 {
     margin-left: auto;
     margin-right: 0;
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .expense-form-container {
-        width: 90%;
+      width: 90%;
     }
-
+  
     .buttons {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .buttons button {
-        width: 100%;
+      width: 100%;
     }
-}
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+    .expense-list-container {
+      max-width: 500px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .expense-list-container {
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .expense-list-container {
+      max-width: 300px;
+    }
+  
+    .expense-form input, .expense-form select {
+      width: 100%;
+    }
+  }
+  
